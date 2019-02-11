@@ -23,8 +23,10 @@ pipeline {
 		}
 	}
 	stage('deploy') {
+		steps {
 			sh ' ./jenkins/scripts/deliver.sh'
 		}
+	}
     }	
 }
 
