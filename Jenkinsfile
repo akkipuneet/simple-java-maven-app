@@ -22,6 +22,9 @@ pipeline {
 			}
 		}
 	}
+	stage('deploy') {
+			sh ' ./jenkins/scripts/deliver.sh'
+		}
     }	
 }
 
